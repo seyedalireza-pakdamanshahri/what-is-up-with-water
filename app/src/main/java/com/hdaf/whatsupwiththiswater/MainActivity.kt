@@ -147,7 +147,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getCityNameFromLocation(location: String, callback: (String?) -> Unit) {
-        val apiKey = "AIzaSyBSp2BJpe0LQgY7LPtSRCzhX-AJK5rNwgk"
+        val apiKey = ""
         ApiServiceBuilder.geocodingService.getCityFromLocation(location, apiKey)
             .enqueue(object : Callback<GeocodingResponse> {
                 override fun onResponse(
