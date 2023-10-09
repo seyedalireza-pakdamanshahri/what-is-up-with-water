@@ -1,0 +1,19 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Note: jcenter() is deprecated and you should eventually migrate away from it.
+        maven { url 'https://jitpack.io' }  // Add this line
+    }
+}
+
+rootProject.name = "What’s Up With This Water"
+include ':app'
